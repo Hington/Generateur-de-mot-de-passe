@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(54, 53, 53, 0.658);
+}
+.container{
+    width: 500px;
+    border:2px solid rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: -19px 18px 10px 2px rgb(255 255 255 / 64%);
+transform: translate(-50%, -50%);
+background-color: rgba(111, 118, 206, 0.555);
+}
+.container h1{
+    text-align: center;
+    font-size:larger ;
+    text-transform: uppercase;
+    color: azure;
+    margin: 15px auto -14px;
+}
+.placeEcran{
+    display: grid;
+    width: 90%;
+    margin: 5px 25px;
+    grid-template-columns: 85% 10%;
+}
+.placeEcran .ecran, .placeEcran .icon svg{
+    border: 1px solid black;
+    margin: 25px 0px 15px 0;
+    box-shadow: inset 1px 1px 10px 0px black;
+}
+.placeEcran .ecran{
+    padding: 10px 1px;
+    width: 100%;
+    height: 50%;
+    text-indent: 25px;
+    color: aliceblue;
+    box-shadow: inset 1px 1px 10px 0px black;
+    text-align: center;
+}
+.placeEcran .icon svg{
+    stroke: aliceblue;
+    cursor: copy;
+}
+.selection {
+    display: grid;
+    grid-template-columns: 90% 8%;
+    grid-gap: 1%;
+    width: 90%;
+    justify-content: center;
+    position: relative;
+    margin: 5px auto 25px;
+}
+.selection label, .selection input{
+    cursor: pointer;
+    margin: 8px;
+    text-transform: capitalize;
+    color: azure;
+}
+.selection input[type='number']{
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 1px 0px;
+    border: none;
+    border-radius: 25%;
+    color: white;
+    background-color: darkgray;
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px 0px 5px 5px;
+}
+.selection .btn{
+    padding: 15px;
+    grid-column: span 2;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: azure;
+    font-weight: bolder;
+    background-color: rgb(176 176 255 / 52%);
+    border: none;
+}
+.selection .btn:hover{
+    transition: 2s;
+    background-color: rgb(126 163 158 / 77%);
+    transform: rotateY(184deg);
+}
+
+blockquote{
+    text-align: center;
+    padding: 5px 0 10px 0;
+    margin: -10px 0 0 0;
+    text-transform: uppercase;
+    font-family: fangsong;
+    font-size: medium;
+    color: oldlace;
+}
