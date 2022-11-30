@@ -7,15 +7,15 @@ body{
     background-color: rgba(54, 53, 53, 0.658);
 }
 .container{
-    width: 500px;
-    border:2px solid rgb(255, 255, 255);
+    width: 400px;
+    border: 1px solid rgb(255, 255, 255);
     position: absolute;
     left: 50%;
     top: 50%;
     border-radius: 10px;
-    box-shadow: -19px 18px 10px 2px rgb(255 255 255 / 64%);
-transform: translate(-50%, -50%);
-background-color: rgba(111, 118, 206, 0.555);
+    box-shadow: -1px 2px 0px 0px rgb(0 0 0);
+    transform: translate(-50%, -50%);
+    background-color: rgb(45 50 116 / 56%);
 }
 .container h1{
     text-align: center;
@@ -27,35 +27,38 @@ background-color: rgba(111, 118, 206, 0.555);
 .placeEcran{
     display: grid;
     width: 90%;
-    margin: 5px 25px;
+    margin: 0px 25px;
     grid-template-columns: 85% 10%;
 }
 .placeEcran .ecran, .placeEcran .icon svg{
     border: 1px solid black;
     margin: 25px 0px 15px 0;
-    box-shadow: inset 1px 1px 10px 0px black;
+    box-shadow: inset -1px 0px 10px 0px #ebe8e8;
+    border: none;
+    width: 100%;
 }
 .placeEcran .ecran{
     padding: 10px 1px;
-    width: 100%;
     height: 50%;
     text-indent: 25px;
     color: aliceblue;
-    box-shadow: inset 1px 1px 10px 0px black;
     text-align: center;
+    border-radius: 5px 0 0 5px;
 }
 .placeEcran .icon svg{
     stroke: aliceblue;
     cursor: copy;
+    padding: 10px 1px;
+    border-radius: 0 5px 5px 0;
 }
 .selection {
     display: grid;
-    grid-template-columns: 90% 8%;
+    grid-template-columns: 80% 15%;
     grid-gap: 1%;
     width: 90%;
     justify-content: center;
     position: relative;
-    margin: 5px auto 25px;
+    margin: -14px auto 25px;
 }
 .selection label, .selection input{
     cursor: pointer;
@@ -66,14 +69,12 @@ background-color: rgba(111, 118, 206, 0.555);
 .selection input[type='number']{
     cursor: pointer;
     text-transform: capitalize;
-    margin: 1px 0px;
     border: none;
-    border-radius: 25%;
+    border-radius: 5%;
     color: white;
-    background-color: darkgray;
+    background-color: #856d9f;
     text-align: center;
     font-weight: bolder;
-    padding: 5px 0px 5px 5px;
 }
 .selection .btn{
     padding: 15px;
@@ -84,13 +85,14 @@ background-color: rgba(111, 118, 206, 0.555);
     text-transform: uppercase;
     color: azure;
     font-weight: bolder;
-    background-color: rgb(176 176 255 / 52%);
+    background-color: rgb(106 106 114 / 52%);
     border: none;
+    margin-top: 3px;
 }
 .selection .btn:hover{
     transition: 2s;
-    background-color: rgb(126 163 158 / 77%);
-    transform: rotateY(184deg);
+    background-color: rgb(165 12 243 / 77%);
+    transform: translateY(10px);
 }
 
 blockquote{

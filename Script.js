@@ -50,7 +50,7 @@ function AffichageMotDePasseGenerer(longueurMDP, majusculeMDP, minusculeMDP,nomb
     }
 
     if (longueurMDP === 0 || longueurMDP >20 || longueurMDP< 4) {
-       alert('la longueur du mot de passe est égale a 0 ou inferieur a 4 ou supperieur a 20')
+       alert('La longueur du mot de passe n\'a pas été respecté')
     }else{
         for (let i = 0; i < longueurMDP; i+=nombreCaseCocher ) {
             arryCaseCocher.forEach(item => {
